@@ -12,7 +12,7 @@
 
 ## Reveal.js 플러그인
 
-이 발표자료는 [Reveal.js](https://github.com/hakimel/reveal.js/) 를 활용해 작성되었으며, 데모와 효율적인 발표를 위해 아래의 플러그인들이 추가로 사용하였다.
+이 발표자료는 [Reveal.js](https://github.com/hakimel/reveal.js/) 를 활용해 작성되었으며, 데모와 효율적인 발표를 위해 아래의 플러그인들이 추가로 사용되었다.
 
 ### ibg.js
 
