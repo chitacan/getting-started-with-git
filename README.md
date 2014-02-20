@@ -33,7 +33,7 @@
 아래와 같이 `Internal Links`를 사용할때 클래스에 `jump` 를 추가하면 사용할 수 있다.
 
 ```html
-<li><a href="#/3/12" class="jump">demo</a></li>↲
+<li><a href="#/3/12" class="jump">demo</a></li>
 ```
 
 ![jump-demo](https://raw.github.com/chitacan/getting-started-with-git/master/img/jump.gif)
