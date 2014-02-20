@@ -12,13 +12,15 @@
 
 ## Reveal.js 플러그인
 
-이 발표자료는 [Reveal.js](https://github.com/hakimel/reveal.js/) 를 활용해 작성되었으며, 데모와 효율적인 발표를 위해 아래의 플러그인이 추가로 사용됩니다.
+이 발표자료는 [Reveal.js](https://github.com/hakimel/reveal.js/) 를 활용해 작성되었으며, 데모와 효율적인 발표를 위해 아래의 플러그인들이 추가로 사용하였다.
 
 ### ibg.js
 
 `Reveal.js` 의 배경을 특정 url의 내용으로 설정할 수 있는 플러그인. 아래와 같이 `section` 태그의 `data-bgurl` 속성에 배경으로 설정하고자 하는 url을 선언하여 사용할 수 있다.
 
-    <section data-bgurl="http://git-scm.com"></section>
+```html
+<section data-bgurl="http://git-scm.com"></section>
+```
 
 ![ibg-demo](https://raw.github.com/chitacan/getting-started-with-git/master/img/ibg.gif)
 
@@ -27,6 +29,12 @@
 ### jump.js
 
 `Reveal.js`의 [Internal Links](https://github.com/hakimel/reveal.js/#internal-links) 로 특정 페이지에 이동하였을때 원래 페이지로 돌아올 수 있는 버튼을 표시해주는 플러그인.
+
+아래와 같이 `Internal Links`를 사용할때 클래스에 `jump` 를 추가하면 사용할 수 있다.
+
+```html
+<li><a href="#/3/12" class="jump">demo</a></li>↲
+```
 
 ![jump-demo](https://raw.github.com/chitacan/getting-started-with-git/master/img/jump.gif)
 
