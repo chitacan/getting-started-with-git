@@ -24,7 +24,7 @@
 
 ![ibg-demo](https://raw.github.com/chitacan/getting-started-with-git/master/img/ibg.gif)
 
-아래 `tty.js` 와 연동하면 `Reveal.js` 내에서 터미널을 연동할 수 있다.
+아래 `tty.js` 와 연동하면 `Reveal.js` 내에서 터미널을 사용할 수 있다.
 
 ### jump.js
 
