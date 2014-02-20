@@ -1,0 +1,6 @@
+{
+  "shell": "bash",
+  "term": {
+    "termName": "xterm"
+  }
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>git</title>
+  <meta name="author" content="chitacan">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/chitacan.css" id="theme">
+
+  <!-- For syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/atelier-seaside.light.css">
+
+  <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+  <!-- 
+  <script>
+    document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+  </script>
+  -->
+
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h1 style="font-size:5em;">깃</h1>
+        <small style="color:darkgray;">[gɪt][명사] (英 속어) 재수 없는[멍청한] 놈</small>
+        <p>시작하기</p>
+          <small>by
+            <a href="https://github.com/chitacan" class="roll">chitacan</a>
+          </small>
+        </p>
+      </section>
+
+      <section>
+        <h1>오늘의 주제</h1>
+        <p style="color:darkgray;">는 아닙니다...</p>
+        <ul>
+          <li>SVN vs Git</li>
+          <li>Git의 모든 명령어 파헤치기</li>
+        </ul>
+      </section>
+
+      <section>
+        <h1>오늘의 주제</h1>
+        <ul>
+          <li>Git을 많이 쓰는 이유</li>
+          <li>Git 쉽게 시작하기</li>
+        </ul>
+      </section>
+
+      <section class="stack">
+        <section> 
+          <h1>Git</h1>
+          <p>소스코드 관리를 위한 <b class="underline">분산 버전 관리</b> 시스템</p>
+        </section>
+
+        <section>
+          <h1>분산 버전 관리?</h1>
+          <ul>
+            <li>중앙 서버에만 의존하지 않는다.</li>
+            <li>모든 것은 로컬에 저장</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>왜 이런것이 필요할까?</h2>
+        </section>
+
+        <section>
+          <h1>오픈소스</h1>
+        </section>
+
+        <section>
+          <h1>Git</h1>
+          <p>모든 것을 로컬로 가져온다.</p>
+          <ul>
+            <li>커밋, 로그를 로컬에서!!</li>
+            <li>빠르다!!</li>
+            <li>내가 원하는 시점에 서버에 공유</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>X, Y ?</h2>
+          <pre><code>
+        function opensource(x, y) {
+          if (!!x && !!y)
+            return SUCCESS;
+          else
+            return BRUTAL_FAIL;
+        }
+
+        opensource(); // ??
+          </code></pre>
+        </section>
+
+        <section>
+          <h1>공유 & 협업</h1>
+        </section>
+
+        <section>
+          <h2>공유 & 협업을 위해서는</h2>
+          <ul>
+            <li>새로운 기능을 쉽게 추가, 테스트</li>
+            <li>의미있는 커밋을 작성할 수 있는 도구</li>
+            <li>작성한 코드를 손쉽게 공유</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Git</h1>
+          <ul>
+            <li>Branch</li>
+            <li>Stage</li>
+            <li>Remote</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Git</h1>
+          <p>서버에 의존이 적은 분산 버전 관리 시스템</p>
+          <p>공유와 협업이 강조되는 <b class="underline">오픈소스 프로젝트</b>에 사용하기 적합</p>
+        </section>
+
+        <section>
+          <h2>꼭 오픈소스가 아니더라도</h2>
+          <ul>
+            <li>동일한 제품을 여러개의 버전(branch) 로 운영하는 경우</li>
+            <li>대규모 인원이 투입되는 프로젝트</li>
+            <li>새로운 기능의 추가와 삭제가 빈번하게 일어나는 프로젝트</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Demo</h1>
+          <small style="color:darkgray;">Branch, Stage, Remote</small>
+          <p>내가 코드를 수정하고 있는 사이에,<br> 친구가 자신의 수정 결과를 확인해 달라고 요청했을 때</p>
+        </section>
+
+        <section data-bgurl="http://localhost:3000">
+        </section>
+
+        <section>
+          <h2>Git을 사용하는 프로젝트들</h2>
+          <p><a href="https://github.com/git/git">Git</a>, <a href="https://android.googlesource.com/">android</a>, <a href="http://git.kernel.org/cgit/">kernel</a>, <a href="http://www.chromium.org/">chromium</a>, <a href="https://github.com/joyent/node">node.js</a>, <br><a href="https://github.com/jquery/jquery">jQuery</a>, <a href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a>, <a href="https://github.com/Homebrew/homebrew">homebrew</a>, <a href="http://git.eclipse.org/c/">Eclipse</a> 등등</p>
+        </section>
+      </section>
+
+      <section class="stack">
+        <section>
+          <h1>시작하기</h1>
+        </section>
+
+        <section>
+          <h2>Git은 어렵다.</h2>
+          <ul>
+            <li>깔끔한 커밋과 히스토리 작성을 위한 명령어</li>
+            <li>이게 싫으시면...</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>설치하기</h1>
+          <a href="http://git-scm.com">http://git-scm.com</a>
+        </section>
+
+        <section data-bgurl="http://git-scm.com">
+        </section>
+
+        <section>
+          <h1>Github</h1>
+          <a href="https://github.com/">https://github.com/</a>
+        </section>
+
+        <section data-background="img/github_1.png">
+        </section>
+
+        <section data-background="img/github_2.png">
+        </section>
+
+        <section>
+          <h2>꼭 설치해야 되나요?</h2>
+          <ul>
+            <li><a href="http://try.github.com">Try Git</a></li>
+            <li><a href="http://pcottle.github.io/learnGitBranching/">Learn Git Branching</a></li>
+          </ul>
+        </section>
+
+        <section data-bgurl="http://try.github.com">
+        </section>
+
+        <section data-bgurl="http://pcottle.github.io/learnGitBranching/">
+        </section>
+
+        <section>
+          <h2>Git 내부 구조 <small>(살짝만)</small></h2>
+          <ul>
+            <li>.git/objects 디렉토리</li>
+            <li>Commit, Tree, Blob</li>
+            <li>git cat-file -p</li>
+            <li><a href="#/3/12" class="jump">demo</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>프로 Git</h1>
+          <img src="img/progit.png" alt="">
+        </section>
+
+        <section data-bgurl="http://git-scm.com/book/ko/">
+        </section>
+
+        <section>
+          <h1>로컬 테스트</h1>
+          <pre><code>
+      $ git init --bare
+      $ git clone &lt;remote&gt; &lt;target&gt;
+          </code></pre>
+          <small style="text-align:right; width: 90%;"><a href="#/3/12" class="jump">demo</a></small>
+        </section>
+      </section>
+
+      <section>
+        <h1>더 보기</h1>
+        <ul>
+          <li>Branch</li>
+          <li>Rebase</li>
+          <li>Bisect</li>
+        </ul>
+      </section>
+
+      <section>
+        <h1 style="font-size:5em;">끝</h1>
+        <small style="color:darkgray;">distributed-is-the-new-centralized</small>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      rollingLinks:true,
+
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+      backgroundTransition: 'slide',
+
+      // Optional libraries used to extend on reveal.js
+      dependencies: [
+        {
+          src: 'lib/js/classList.js', 
+          condition: function() { 
+            return !document.body.classList;
+          } 
+        },
+        { 
+          src: 'plugin/markdown/showdown.js', 
+          condition: function() { 
+            return !!document.querySelector( '[data-markdown]' );
+          }
+        },
+        { 
+          src: 'plugin/markdown/markdown.js',
+          condition: function() { 
+            return !!document.querySelector( '[data-markdown]' );
+          }
+        },
+        { 
+          src: 'plugin/highlight/highlight.js', 
+          async: true, 
+          callback: function() {
+            hljs.initHighlightingOnLoad();
+          }
+        },
+        {
+          src: 'plugin/ibg/ibg.js',
+          async: true,
+          callback: function() {
+            ibg.init();
+          }
+        },
+        {
+          src: 'plugin/jump/jump.js',
+          async: true,
+          callback: function() {
+            jump.init();
+          }
+        }
+      ]
+    });
+  </script>
+</body>
+</html>
