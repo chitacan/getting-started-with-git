@@ -20,7 +20,7 @@
 
     <section data-bgurl="http://git-scm.com"></section>
 
-![ibg-demo]()
+![ibg-demo](https://raw.github.com/chitacan/getting-started-with-git/master/img/ibg.gif)
 
 아래 `tty.js` 와 연동하면 `Reveal.js` 내에서 터미널을 연동할 수 있다.
 
@@ -28,10 +28,10 @@
 
 `Reveal.js`의 [Internal Links](https://github.com/hakimel/reveal.js/#internal-links) 로 특정 페이지에 이동하였을때 원래 페이지로 돌아올 수 있는 버튼을 표시해주는 플러그인.
 
-![jump-demo]()
+![jump-demo](https://raw.github.com/chitacan/getting-started-with-git/master/img/jump.gif)
 
 ## tty.js
 
 `깃 시작하기` 발표에서는 [tty.js](https://github.com/chjj/tty.js) 와 `ibg` 플러그인을 활용해 브라우저 내에서 터미널을 렌더링하여 데모를 진행하였다.
 
-![git-demo]()
+![git-demo](https://raw.github.com/chitacan/getting-started-with-git/master/img/git.gif)
