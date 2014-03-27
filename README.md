@@ -5,6 +5,7 @@
 ## 실행
 
     $ git clone https://github.com/chitacan/getting-started-with-git.git
+    $ cd getting-started-with-git
     $ npm install
     $ grunt
 
