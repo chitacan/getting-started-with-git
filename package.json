@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "chitacan",
+  "engines":{
+    "node" : "<=0.10.25" 
+  },
   "license": "MIT",
   "dependencies": {
     "grunt": "~0.4.2",
