@@ -2,6 +2,26 @@
 
 `깃 시작하기` 발표자료
 
+## 사전 준비사항
+Mac OS의 경우 Xcode command line tool이 설치되야 한다.
+### MacOS 10.8 이전
+```
+xcode-select --install
+```
+### MacOS 10.9 이후
+Command line tools를 10.9, 10.10 버전에 맞게 받는다.
+- https://developer.apple.com/downloads/ 
+### node-gyp 설치
+node.js 네이티브 애드온 빌드도구 설치
+```
+$npm install -g node-gyp
+```
+### grunt-cli 설치
+grunt의 명령라인인 grunt-cli 설치
+```
+$npm install -g grunt-cli
+```
+
 ## 실행
 
     $ git clone https://github.com/chitacan/getting-started-with-git.git
