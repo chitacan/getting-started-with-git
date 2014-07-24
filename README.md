@@ -3,6 +3,10 @@
 `깃 시작하기` 발표자료
 
 ## 사전 준비사항
+#### node.js
+node 버전은 v0.10 을 권장한다.
+* v0.11 사용시 pty.js 빌드에 문제 발생.
+
 Mac OS의 경우 Xcode command line tool이 설치되야 한다.
 #### MacOS 10.8 이전
 ```
